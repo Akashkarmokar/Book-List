@@ -24,6 +24,9 @@ let validForm = function(formObject){
 let addItem = function(singleRow){
     let tableBody = document.querySelector('#all-table-body');
     tableBody.appendChild(singleRow);
+    setTimeout(() => {
+        window.alert("Ok bahi thik ase. Ami sob add kore dicci");
+    }, 1);
 };
 
 let creteTableItem = function(formObject){
@@ -53,10 +56,12 @@ let addBook = function(event){
     let formObject = event.target;
     if(validForm(event.target)==true){
         creteTableItem(event.target);
-        window.alert("Ok bahi thik ase. Ami sob add kore dicci");
+        // If we use just window alert it pasuse the script untill any response with alert bar
+        // so we call this alert with settimeout asynchronous function and I do it inside addItem function
+        // window.alert("Ok bahi thik ase. Ami sob add kore dicci");
         clearAllinputFill(event.target);
     }else{
-        window.alert("Bhai sob thik thak dewa hoy nai!");
+        window.alert("OOPS! Bhai sob thik thak dewa hoy nai!");
     }
 
 };
