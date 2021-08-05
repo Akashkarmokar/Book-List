@@ -102,3 +102,12 @@
     margin-left: 50%;
     transform: translate(-50%,0%);
 }
+
+/* --------- For small Design -------- */
+@media(max-width:700px){
+    .container .show{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
