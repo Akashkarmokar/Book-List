@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ------ CSS File Link ---------  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Book-List</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="header">Book List</h1>
+        <div class="form">
+            <form action="">
+                <!-- <label for="title">Title</label><br> -->
+                <input type="text" id="title" placeholder="Tile">
+                <!-- <label for="author">Author</label><br> -->
+                <input type="text" id="author" placeholder="Author">
+                <!-- <label for="category">Category</label><br> -->
+                <input type="text" id="category" placeholder="Category">
+                <input type="submit" value="Add" id="submit">
+            </form>
+        </div>
+        <div class="show">
+            <div class="all">
+                <h2>All Books</h2>
+                <table class="table-list">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody id="all-table-body">
+                        <tr>
+                            <td>Akash</td>
+                            <td>Akash</td>
+                            <td>Akash</td>
+                        </tr>
+                        <tr>
+                            <td>Akash</td>
+                            <td>Akash</td>
+                            <td>Akash</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+            <div class="favourite">
+                <h2>Favourit Books</h2>
+                <table class="table-list">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fav-table-body">
+                        <tr>
+                            <td>Akash</td>
+                            <td>Akash</td>
+                            <td>Akash</td>
+                        </tr>
+                        <tr>
+                            <td>Akash</td>
+                            <td>Akash</td>
+                            <td>Akash</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
